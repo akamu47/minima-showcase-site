@@ -24,6 +24,10 @@
     { id: 's2',  file: 'minima_amplification_plan.md',   title: '4-Tier Amplification Plan',            kind: 'Strategy · Campaign',             stats: '15 KB' },
     { id: 's3',  file: 'minima_coindesk_strategy.md',    title: 'CoinDesk Coverage Playbook',           kind: 'Strategy · Media',                stats: '7 KB' },
 
+    { id: 'ms',  file: 'minima_master_strategy.md',     title: 'The Complete Content & Communications Strategy', kind: 'Master Strategy',           stats: '57 KB' },
+    { id: 'ipa', file: 'integritas_product_architecture.md', title: 'Integritas Product Architecture — Council Assessment', kind: 'Product · Architecture', stats: '50 KB' },
+    { id: 'gh',  file: 'minima_github_repos.md',          title: 'Minima GitHub — 58 Repositories',              kind: 'Product · Developer',          stats: '3 KB' },
+
     { id: 'acc', file: 'minima_profile_setup.md',        title: '@MinimaMachines & @MinimaDePIN — Profile, Banner, Bio', kind: 'Account Setup', stats: '3 KB' },
   ];
 
@@ -81,7 +85,7 @@
   function routeFromHash() {
     const h = (location.hash || '').replace('#', '');
     // Don't treat section anchors on home page (thesis, numbers, articles, hub, tech, partners, top) as reader routes
-    const sectionAnchors = new Set(['', 'top', 'thesis', 'numbers', 'articles', 'hub', 'tech', 'partners', 'doc']);
+    const sectionAnchors = new Set(['', 'top', 'thesis', 'numbers', 'articles', 'hub', 'tech', 'partners']);
     if (byId[h]) {
       openReader(byId[h].file);
     } else if (sectionAnchors.has(h) && readerView && !readerView.hasAttribute('hidden')) {
