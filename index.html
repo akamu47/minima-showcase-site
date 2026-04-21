@@ -3,463 +3,122 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Minima — The Trust Layer for Autonomous Machines</title>
-<meta name="description" content="Minima is the only edge-native, quantum-resistant L1 designed to run on every device. Research, strategy, and documentation hub for the Minima content campaign." />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="googlebot" content="noindex, nofollow" />
+<title>Restricted</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/styles.css" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M6 22 L10 10 L16 20 L22 10 L26 22' stroke='%232DD4BF' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --ink: #f5f5f5;
+    --muted: #8a8a8a;
+    --teal: #2DD4BF;
+    --line: rgba(245,245,245,0.12);
+    --card: rgba(255,255,255,0.03);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(1200px 600px at 20% -10%, rgba(45,212,191,0.08), transparent 60%),
+      radial-gradient(900px 500px at 90% 110%, rgba(45,212,191,0.05), transparent 60%),
+      var(--bg);
+    padding: 24px;
+  }
+  .gate {
+    width: 100%; max-width: 440px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 40px 36px;
+    backdrop-filter: blur(6px);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; }
+  .brand svg { width: 26px; height: 26px; color: var(--teal); }
+  .brand-text { font-family: 'Instrument Serif', serif; font-size: 22px; letter-spacing: 0.5px; }
+  .brand-sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; margin-left: 4px; }
+  h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+  .sub { color: var(--muted); font-size: 14px; line-height: 1.55; margin: 0 0 28px; }
+  label { display: block; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+  input[type="password"] {
+    width: 100%; padding: 12px 14px;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    font-family: 'Inter', sans-serif; font-size: 15px;
+    outline: none; transition: border-color 0.15s;
+  }
+  input[type="password"]:focus { border-color: var(--teal); }
+  button {
+    width: 100%; margin-top: 16px; padding: 12px 14px;
+    background: var(--teal); color: #0a0a0a;
+    border: none; border-radius: 8px;
+    font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+    letter-spacing: 0.3px; cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  button:hover { opacity: 0.9; }
+  .err { color: #ff6b6b; font-size: 13px; margin-top: 12px; min-height: 18px; font-family: 'JetBrains Mono', monospace; }
+  .foot { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; font-family: 'JetBrains Mono', monospace; }
+</style>
 </head>
 <body>
-
-<!-- NAV -->
-<header class="nav">
-  <a href="#top" class="brand" aria-label="Minima home">
-    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-      <path d="M6 22 L10 10 L16 20 L22 10 L26 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <span class="brand-text">Minima</span>
-    <span class="brand-sub">/ Trust Layer</span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#thesis">Thesis</a>
-    <a href="#numbers">Numbers</a>
-    <a href="#articles">Series</a>
-    <a href="#hub">Hub</a>
-    <a href="#tech">Tech</a>
-  </nav>
-</header>
-
-<main id="top" class="page" data-view="home">
-
-<!-- ================== HOME VIEW ================== -->
-<section id="home-view" class="view view-home">
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-eyebrow">
-        <span class="dot"></span> Campaign dossier · April 2026
-      </div>
-      <h1 class="hero-title">
-        The Trust Layer<br/>
-        for <em>Autonomous Machines</em>.
-      </h1>
-      <p class="hero-lede">
-        Minima is the only edge-native, quantum-resistant Layer-1 designed to run a complete,
-        validating node on <em>every</em> device — from a smartphone to a sensor on a factory floor.
-        No supernodes. No gas fees. No centralisation.
-      </p>
-      <div class="hero-meta">
-        <div><span class="k">Ticker</span><span class="v">MINIMA</span></div>
-        <div><span class="k">Network</span><span class="v">Layer-1 · PoW</span></div>
-        <div><span class="k">Audit</span><span class="v">CertiK AA · 87.14</span></div>
-        <div><span class="k">Deadline</span><span class="v">Aug 2, 2026 · EU AI Act</span></div>
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#articles">Read the series</a>
-        <a class="btn btn-ghost" href="#hub">Strategy hub →</a>
-      </div>
+  <main class="gate" role="main">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 L10 10 L16 20 L22 10 L26 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-text">Minima</span>
+      <span class="brand-sub">/ Trust Layer</span>
     </div>
-    <aside class="hero-side">
-      <div class="side-panel">
-        <div class="panel-label">The setup</div>
-        <ol class="panel-list">
-          <li><span>01</span><div>EU AI Act enforcement: <b>Aug 2, 2026</b></div></li>
-          <li><span>02</span><div>Compliance market: <b>$5.6 – 7.4B by 2030</b></div></li>
-          <li><span>03</span><div>No incumbent platform handles <b>edge AI</b></div></li>
-          <li><span>04</span><div>Minima: the <b>only</b> edge-native L1</div></li>
-        </ol>
-      </div>
-      <div class="side-panel ascii">
-<pre>
-  device ──▶ full node ──▶ consensus
-   ▲              │            │
-   │              ▼            ▼
-   └── integritas ◀── compliance proofs
-</pre>
-      </div>
-    </aside>
-  </section>
+    <h1>Restricted preview</h1>
+    <p class="sub">This is an internal working site. Access is limited to the Minima team and collaborators. Enter the shared passphrase to continue.</p>
+    <form id="gate-form" autocomplete="off">
+      <label for="pw">Passphrase</label>
+      <input type="password" id="pw" name="pw" autofocus autocomplete="off" spellcheck="false" />
+      <button type="submit">Unlock</button>
+      <div class="err" id="err" aria-live="polite"></div>
+    </form>
+    <div class="foot">Not for public distribution</div>
+  </main>
+<script>
+(async function(){
+  // If already unlocked in this session, go straight in
+  try {
+    if (sessionStorage.getItem('mshow_auth') === 'b66b89daf61656ceea1acd9476965dcd307a62302ff33a05f3730b75ca032cc1') {
+      location.replace('site.html');
+      return;
+    }
+  } catch(e) {}
 
-  <!-- THESIS -->
-  <section id="thesis" class="section section-thesis">
-    <div class="section-head">
-      <div class="section-number">01</div>
-      <h2 class="section-title">The Thesis</h2>
-    </div>
-    <div class="thesis-body">
-      <p class="thesis-lead">
-        On <b>August 2, 2026</b>, the EU AI Act's general-purpose and high-risk provisions become enforceable across every member state. Non-compliance fines reach <b>€35 million or 7% of global revenue</b>, whichever is greater — a regime stricter than GDPR.
-      </p>
-      <p>
-        A <b>$5.6 – 7.4 billion</b> AI-compliance market is forming around this deadline, but today's RegTech and MLOps platforms were built for cloud models and centralised logs. <b>None</b> provide tamper-evident, device-local audit trails for AI that runs at the edge — precisely where the Act's transparency, logging, and incident-reporting obligations land hardest.
-      </p>
-      <p>
-        Minima is the only edge-native, quantum-resistant Layer-1 engineered to run a complete validating node on any device, producing cryptographic compliance proofs where the inference actually happens. The asymmetric bet: a <b>~$3.7M</b> market cap in front of a <b>multi-billion-dollar</b> structural market that only one architecture can serve.
-      </p>
-      <p class="thesis-cta">
-        <a href="#a1" class="inline-link">Read Article 1 — The EU AI Act: What It Actually Says →</a>
-      </p>
-    </div>
-  </section>
+  const EXPECTED = 'b66b89daf61656ceea1acd9476965dcd307a62302ff33a05f3730b75ca032cc1';
+  const form = document.getElementById('gate-form');
+  const pw = document.getElementById('pw');
+  const err = document.getElementById('err');
 
-  <!-- KEY NUMBERS -->
-  <section id="numbers" class="section section-numbers">
-    <div class="section-head">
-      <div class="section-number">02</div>
-      <h2 class="section-title">Key Numbers</h2>
-      <div class="section-kicker">A single-screen snapshot of the opportunity.</div>
-    </div>
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-label">Token price</div>
-        <div class="stat-value">~$0.007</div>
-        <div class="stat-foot">MINIMA · spot</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Market cap</div>
-        <div class="stat-value">~$3.7M</div>
-        <div class="stat-foot">fully circulating</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Raised to date</div>
-        <div class="stat-value">$27M</div>
-        <div class="stat-foot">equity + token</div>
-      </div>
-      <div class="stat highlight">
-        <div class="stat-label">CertiK score</div>
-        <div class="stat-value">87.14 <span class="stat-badge">AA</span></div>
-        <div class="stat-foot">security + governance</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Full-node footprint</div>
-        <div class="stat-value">300 MB</div>
-        <div class="stat-foot">runs on a phone</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Partners</div>
-        <div class="stat-value">ARM · Siemens · Fetch.ai</div>
-        <div class="stat-foot">chip · industry · agents</div>
-      </div>
-      <div class="stat highlight">
-        <div class="stat-label">EU AI Act enforcement</div>
-        <div class="stat-value">Aug 2, 2026</div>
-        <div class="stat-foot">GPAI + high-risk live</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Addressable market</div>
-        <div class="stat-value">$5.6 – 7.4B</div>
-        <div class="stat-foot">AI compliance by 2030</div>
-      </div>
-    </div>
-  </section>
+  async function sha256(str){
+    const buf = new TextEncoder().encode(str);
+    const hash = await crypto.subtle.digest('SHA-256', buf);
+    return Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
 
-  <!-- ARTICLE SERIES -->
-  <section id="articles" class="section section-articles">
-    <div class="section-head">
-      <div class="section-number">03</div>
-      <h2 class="section-title">Publication Series</h2>
-      <div class="section-kicker">Five essays. ~23,000 words. Regulatory analysis → market gap → solution → partnerships → thesis.</div>
-    </div>
-    <div class="articles-grid">
-      <a class="article-card" href="#a1" data-doc="article_1_eu_ai_act.md" data-title="The EU AI Act: What It Actually Says" data-id="a1">
-        <div class="ac-meta"><span>Article 01</span><span>6,115 words</span></div>
-        <h3 class="ac-title">The EU AI Act: What It Actually Says, Who It Actually Affects, and What You Actually Have to Do</h3>
-        <p class="ac-summary">Pure regulatory analysis — no Minima mentions. The statutory text, the real enforcement timeline, and what every GPAI and high-risk operator must build before August 2, 2026.</p>
-        <div class="ac-foot">Regulatory analysis → <span>Read article</span></div>
-      </a>
-      <a class="article-card" href="#a2" data-doc="article_2_compliance_gap.md" data-title="The $7 Billion Compliance Industry Has a Blind Spot" data-id="a2">
-        <div class="ac-meta"><span>Article 02</span><span>3,988 words</span></div>
-        <h3 class="ac-title">The $7 Billion Compliance Industry Has a Blind Spot</h3>
-        <p class="ac-summary">Market analysis of the RegTech and MLOps incumbents. Platform-by-platform profile of where Credo AI, Holistic AI, Fiddler, Arize and the Big Four stop — and why the edge is the blind spot.</p>
-        <div class="ac-foot">Market landscape → <span>Read article</span></div>
-      </a>
-      <a class="article-card" href="#a3" data-doc="article_3_edge_native_solution.md" data-title="The Edge-Native Answer" data-id="a3">
-        <div class="ac-meta"><span>Article 03</span><span>5,773 words</span></div>
-        <h3 class="ac-title">The Edge-Native Answer</h3>
-        <p class="ac-summary">A technical mapping of Minima's architecture — 300MB full nodes, Integritas compliance proofs, quantum-resistant signatures — to each article of the EU AI Act's obligations.</p>
-        <div class="ac-foot">Technical solution → <span>Read article</span></div>
-      </a>
-      <a class="article-card" href="#a4" data-doc="article_4_strengths_applications.md" data-title="Beyond Compliance — ARM, Siemens and Fetch.ai" data-id="a4">
-        <div class="ac-meta"><span>Article 04</span><span>3,958 words</span></div>
-        <h3 class="ac-title">Beyond Compliance: Why ARM, Siemens, and Fetch.ai Are Building on Minima</h3>
-        <p class="ac-summary">A partnership deep-dive. How ARM's silicon, Siemens' industrial base, and Fetch.ai's agent economy converge on Minima as the substrate for DePIN and autonomous machines.</p>
-        <div class="ac-foot">Partnerships + DePIN → <span>Read article</span></div>
-      </a>
-      <a class="article-card" href="#a5" data-doc="article_5_investment_thesis.md" data-title="The Asymmetric Bet" data-id="a5">
-        <div class="ac-meta"><span>Article 05</span><span>3,455 words · 54 citations</span></div>
-        <h3 class="ac-title">The Asymmetric Bet</h3>
-        <p class="ac-summary">The investment thesis, fully cited. Why a $3.7M market cap in front of a $7B regulatory wave, with a CertiK-AA audit and ARM-backed partnerships, is the setup of the cycle.</p>
-        <div class="ac-foot">Investment thesis → <span>Read article</span></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- STRATEGY & RESEARCH HUB -->
-  <section id="hub" class="section section-hub">
-    <div class="section-head">
-      <div class="section-number">04</div>
-      <h2 class="section-title">Strategy &amp; Research Hub</h2>
-      <div class="section-kicker">The full dossier behind the series — primary research, campaign strategy, and account setup.</div>
-    </div>
-
-    <div class="hub-group">
-      <div class="hub-group-label"><span>R</span> Research</div>
-      <div class="docs-grid">
-        <a class="doc-card" data-doc="minima_deep_research.md" data-title="Minima Technical Deep Dive" href="#r1">
-          <div class="doc-kind">Primary research</div>
-          <div class="doc-title">Minima Technical Deep Dive</div>
-          <div class="doc-desc">Architecture, consensus, node profile, tokenomics, partnerships and competitive positioning.</div>
-          <div class="doc-size">61 KB</div>
-        </a>
-        <a class="doc-card" data-doc="eu_ai_act_research.md" data-title="EU AI Act Legal Analysis" href="#r2">
-          <div class="doc-kind">Legal analysis</div>
-          <div class="doc-title">EU AI Act Legal Analysis</div>
-          <div class="doc-desc">Article-by-article read of obligations, timelines, fines and overlooked edge-AI requirements.</div>
-          <div class="doc-size">75 KB</div>
-        </a>
-        <a class="doc-card" data-doc="ai_compliance_market.md" data-title="AI Compliance Market Landscape" href="#r3">
-          <div class="doc-kind">Market landscape</div>
-          <div class="doc-title">AI Compliance Market Landscape</div>
-          <div class="doc-desc">Sizing, segmentation, incumbent profiles (Credo, Holistic, Fiddler, Arize, Big Four) and gap map.</div>
-          <div class="doc-size">45 KB</div>
-        </a>
-        <a class="doc-card" data-doc="minima_agent_thesis.md" data-title="Agent Thesis — Why Agents Need Minima" href="#r4">
-          <div class="doc-kind">Thesis</div>
-          <div class="doc-title">Agent Thesis: Why Agents Need Minima</div>
-          <div class="doc-desc">Autonomous agents require payments, identity, and audit trails at the edge. Only Minima offers all three.</div>
-          <div class="doc-size">34 KB</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="hub-group">
-      <div class="hub-group-label"><span>M</span> Master Document</div>
-      <div class="docs-grid">
-        <a class="doc-card" data-doc="minima_master_strategy.md" data-title="Minima: The Complete Content & Communications Strategy" href="#ms">
-          <div class="doc-kind">Master strategy</div>
-          <div class="doc-title">The Complete Content &amp; Communications Strategy</div>
-          <div class="doc-desc">57KB consolidated strategy document — research foundation, account identities, 5-article series, content calendar, amplification plan, media strategy, asset registry and quick-reference appendix.</div>
-          <div class="doc-size">57 KB</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="hub-group">
-      <div class="hub-group-label"><span>S</span> Strategy</div>
-      <div class="docs-grid">
-        <a class="doc-card" data-doc="minima_machines_identity.md" data-title="@MinimaMachines Identity & Voice" href="#s1">
-          <div class="doc-kind">Brand / voice</div>
-          <div class="doc-title">@MinimaMachines — Character Identity &amp; Voice Guide</div>
-          <div class="doc-desc">Persona, tone, vocabulary, visual identity, posting cadence and example threads.</div>
-          <div class="doc-size">27 KB</div>
-        </a>
-        <a class="doc-card" data-doc="minima_amplification_plan.md" data-title="4-Tier Amplification Plan" href="#s2">
-          <div class="doc-kind">Campaign plan</div>
-          <div class="doc-title">4-Tier Amplification Plan</div>
-          <div class="doc-desc">KOL tiers, seeding mechanics, media ladder and day-by-day rollout calendar.</div>
-          <div class="doc-size">15 KB</div>
-        </a>
-        <a class="doc-card" data-doc="minima_coindesk_strategy.md" data-title="CoinDesk Coverage Playbook" href="#s3">
-          <div class="doc-kind">Media plan</div>
-          <div class="doc-title">CoinDesk Coverage Playbook</div>
-          <div class="doc-desc">Angle, reporter map, pitch drafts and timing around the EU AI Act deadline.</div>
-          <div class="doc-size">7 KB</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="hub-group">
-      <div class="hub-group-label"><span>P</span> Product</div>
-      <div class="docs-grid">
-        <a class="doc-card" data-doc="integritas_product_architecture.md" data-title="Integritas Product Architecture — Council Assessment" href="#ipa">
-          <div class="doc-kind">Product architecture</div>
-          <div class="doc-title">Integritas Product Architecture — Council Assessment</div>
-          <div class="doc-desc">5-perspective council analysis: tier structure, legal schema, enterprise architecture, pricing model, GTM strategy. €1.3M–€8.7M ARR projections.</div>
-          <div class="doc-size">50 KB</div>
-        </a>
-        <a class="doc-card" data-doc="minima_github_repos.md" data-title="Minima GitHub Organization — Repository Analysis" href="#gh">
-          <div class="doc-kind">Developer ecosystem</div>
-          <div class="doc-title">Minima GitHub — 58 Repositories</div>
-          <div class="doc-desc">Organization overview, key repos (protocol, MiniDAPP, dev-tools, bridge), language breakdown, and developer resources.</div>
-          <div class="doc-size">3 KB</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="hub-group">
-      <div class="hub-group-label"><span>A</span> Account Setup</div>
-      <div class="docs-grid">
-        <a class="doc-card" data-doc="minima_profile_setup.md" data-title="Account Setup — @MinimaMachines &amp; @MinimaDePIN" href="#acc">
-          <div class="doc-kind">Account setup</div>
-          <div class="doc-title">@MinimaMachines &amp; @MinimaDePIN — Profile, Banner, Bio</div>
-          <div class="doc-desc">Copy-ready handles, bios, pinned posts, banner specs and launch sequence for both accounts.</div>
-          <div class="doc-size">3 KB</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARTNERSHIPS -->
-  <section id="partners" class="section section-partners">
-    <div class="section-head">
-      <div class="section-number">05</div>
-      <h2 class="section-title">Partnerships</h2>
-      <div class="section-kicker">Silicon. Industry. Agents. Three anchors that turn an L1 into infrastructure.</div>
-    </div>
-    <div class="partners-grid">
-      <div class="partner-card">
-        <div class="partner-mark">ARM</div>
-        <h3>ARM</h3>
-        <div class="partner-tag">Silicon · reach</div>
-        <p>Partnership to embed Minima node software directly in ARM's reference designs — the architecture powering 99% of smartphones and most of the industrial edge. Every ARM device becomes a candidate full node.</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-mark">SIE</div>
-        <h3>Siemens</h3>
-        <div class="partner-tag">Industry · DePIN</div>
-        <p>Industrial collaboration around verifiable machine identity and tamper-evident logs for factory, energy and mobility infrastructure — the regulated heart of Europe's edge AI stack.</p>
-      </div>
-      <div class="partner-card">
-        <div class="partner-mark">FET</div>
-        <h3>Fetch.ai</h3>
-        <div class="partner-tag">Agents · economy</div>
-        <p>Integration with Fetch.ai's autonomous agent framework — giving agents a gasless, auditable settlement layer for machine-to-machine payments and cryptographically signed decision logs.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECHNOLOGY -->
-  <section id="tech" class="section section-tech">
-    <div class="section-head">
-      <div class="section-number">06</div>
-      <h2 class="section-title">Technology</h2>
-      <div class="section-kicker">A Layer-1 that inverts every assumption about where consensus lives.</div>
-    </div>
-
-    <div class="tech-pillars">
-      <div class="pillar">
-        <div class="pillar-label">01 · Node</div>
-        <h3>300 MB full node</h3>
-        <p>A complete, validating node fits in ~300MB and runs on a smartphone, a Raspberry Pi, or a sensor gateway. No supernodes, no archive class, no hidden hierarchy.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-label">02 · Fees</div>
-        <h3>Gasless transactions</h3>
-        <p>Feeless by design. Machine-to-machine payments, compliance attestations, and agent state updates settle without the economic friction that blocks edge use cases on every other L1.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-label">03 · Security</div>
-        <h3>Quantum-resistant</h3>
-        <p>Post-quantum signature schemes and hash-based security primitives — built for machines that will still be running ten years after a cryptographically relevant quantum computer exists.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-label">04 · Product</div>
-        <h3>Integritas</h3>
-        <p>The compliance product layer: tamper-evident audit trails, verifiable AI incident logs and signed model provenance — the exact artefacts the EU AI Act will require.</p>
-      </div>
-    </div>
-
-    <div class="tech-table-wrap">
-      <div class="tech-table-label">Layer-1 comparison</div>
-      <table class="tech-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Minima</th>
-            <th>Bitcoin</th>
-            <th>Ethereum</th>
-            <th>Solana</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><th>Full node footprint</th><td class="good">~300 MB</td><td>~600 GB</td><td>~1.2 TB</td><td>~400 TB</td></tr>
-          <tr><th>Runs on a phone?</th><td class="good">Yes</td><td>No</td><td>No</td><td>No</td></tr>
-          <tr><th>Transaction fees</th><td class="good">Gasless</td><td>Variable</td><td>Variable</td><td>Low</td></tr>
-          <tr><th>Validator model</th><td class="good">Every device</td><td>Mining pools</td><td>Stake (32 ETH)</td><td>Hardware-heavy validators</td></tr>
-          <tr><th>Quantum-resistant</th><td class="good">Yes</td><td>No</td><td>No</td><td>No</td></tr>
-          <tr><th>Designed for edge AI</th><td class="good">Yes</td><td>No</td><td>No</td><td>No</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-brand">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 22 L10 10 L16 20 L22 10 L26 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Minima · Trust Layer for Autonomous Machines</span>
-    </div>
-    <div class="footer-cols">
-      <div class="footer-col">
-        <div class="footer-label">Project</div>
-        <a href="https://minima.global" target="_blank" rel="noopener">minima.global ↗</a>
-        <a href="https://integritas.technology" target="_blank" rel="noopener">integritas.technology ↗</a>
-      </div>
-      <div class="footer-col">
-        <div class="footer-label">Accounts</div>
-        <a href="https://x.com/MinimaMachines" target="_blank" rel="noopener">@MinimaMachines ↗</a>
-        <a href="https://x.com/MinimaDePIN" target="_blank" rel="noopener">@MinimaDePIN ↗</a>
-      </div>
-      <div class="footer-col">
-        <div class="footer-label">Dossier</div>
-        <a href="#articles">Publication series</a>
-        <a href="#hub">Strategy &amp; research hub</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 · Campaign dossier, not investment advice.</span>
-      <span>Last updated: April 2026</span>
-    </div>
-  </footer>
-</section>
-
-<!-- ================== READER VIEW ================== -->
-<section id="reader-view" class="view view-reader" hidden>
-  <div class="reader-shell">
-
-    <aside class="reader-side">
-      <div class="reader-back">
-        <a href="#top" class="back-link" id="backHome">← All documents</a>
-      </div>
-
-      <div class="reader-doc-meta">
-        <div class="reader-kind" id="readerKind">Document</div>
-        <h2 class="reader-doctitle" id="readerDocTitle">—</h2>
-        <div class="reader-stats" id="readerStats"></div>
-      </div>
-
-      <nav class="reader-toc" aria-label="Table of contents">
-        <div class="toc-label">On this page</div>
-        <ol id="tocList" class="toc-list"></ol>
-      </nav>
-
-      <div class="reader-nav-list">
-        <div class="toc-label">Series</div>
-        <ol id="seriesList" class="series-list"></ol>
-      </div>
-    </aside>
-
-    <article class="reader-main">
-      <div class="reader-header">
-        <div class="reader-eyebrow" id="readerEyebrow">Minima dossier</div>
-        <h1 class="reader-title" id="readerTitle">Loading…</h1>
-      </div>
-      <div class="reader-body markdown-body" id="readerBody">
-        <div class="loading">Loading document…</div>
-      </div>
-      <div class="reader-end">
-        <a href="#top" class="btn btn-ghost">← Back to dossier</a>
-      </div>
-    </article>
-  </div>
-</section>
-
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="assets/app.js"></script>
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.textContent = '';
+    const h = await sha256(pw.value);
+    if (h === EXPECTED) {
+      try { sessionStorage.setItem('mshow_auth', EXPECTED); } catch(e){}
+      location.replace('site.html');
+    } else {
+      err.textContent = 'Incorrect passphrase.';
+      pw.value = '';
+      pw.focus();
+    }
+  });
+})();
+</script>
 </body>
 </html>
